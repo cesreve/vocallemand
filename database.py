@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 # Get the database URL from environment variable
-DATABASE_URL = st.secrets["my_database"]["DATABASE_URL"]
+DATABASE_URL = st.secrets["DATABASE_URL"]
 
 def connect_to_db():
     """Connects to PostgreSQL, creates a table, and queries it."""

@@ -3,7 +3,7 @@ import psycopg2
 import hashlib
 
 # Database connection details (replace with your actual values)
-DATABASE_URL = st.secrets["my_database"]["DATABASE_URL"]
+DATABASE_URL = st.secrets["DATABASE_URL"]
 
 def generate_hash(password):
     """Hashes the password using SHA-256."""
